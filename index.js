@@ -18,7 +18,7 @@ second = second <10? "0"+second:second
 const dateTime = year+month+date+"-"+hour+minute+second;
 const timeStamp ="Current TimeStamp in seconds : " + Math.floor(Date.now()/1000);// timeStamp in seconds
 
-const PORT=8000
+const PORT=process.env.PORT
 app.get('/',(request,response)=>{
   response.send("hello")
 })
